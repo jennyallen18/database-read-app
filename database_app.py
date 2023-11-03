@@ -15,7 +15,7 @@ def get_connection():
     df = pd.read_sql_query(query, engine)
     #df.to_html(header="true", table_id="table")
     #print(df)
-    pd.display(df)
+    df
    
 
 
