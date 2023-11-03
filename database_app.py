@@ -9,7 +9,10 @@ def get_connection():
     #conn = psycopg2.connect(conn_string)
     #cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-    engine = sqlalchemy.create_engine(conn_string)
+    #engine = sqlalchemy.create_engine(conn_string)
+
+    engine = create_engine("postgresql+psycopg2://reader:NWDMCE5xdipIjRrp@hh-pgsql-public.ebi.ac.uk/pfmegrnargs")
+    
     # retrieve a list of RNAcentral databases
     query = "SELECT * FROM rnc_database"
 
