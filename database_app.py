@@ -11,7 +11,7 @@ def get_connection():
 
     #engine = sqlalchemy.create_engine(conn_string)
 
-    engine = create_engine("postgresql+psycopg2://reader:NWDMCE5xdipIjRrp@hh-pgsql-public.ebi.ac.uk/pfmegrnargs")
+    engine = sqlalchemy.create_engine("postgresql+psycopg2://reader:NWDMCE5xdipIjRrp@hh-pgsql-public.ebi.ac.uk/pfmegrnargs")
     
     # retrieve a list of RNAcentral databases
     query = "SELECT * FROM rnc_database"
